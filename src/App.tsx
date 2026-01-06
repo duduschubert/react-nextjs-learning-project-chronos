@@ -1,21 +1,19 @@
-import { Heading } from './components/Heading';
-
-
 import './styles/theme.css';
 import './styles/global.css';
 
+import { Container } from './components/Container/index.tsx';
+import { Heading } from './components/Heading/Index.tsx';
+
 export function App() {
-  console.log('Oi');
   return (
     <>
-      <Heading/> {/*Não possuem tags filhas, por isso abre e fecha na mesma sentença*/}
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iste omnis
-        eligendi, eveniet tempore velit numquam perspiciatis praesentium rem
-        molestiae accusamus consequuntur amet cum, magnam repellat consequatur
-        eius nisi saepe.
-      </p>
+      <Container>
+        <Heading>LOGO</Heading>
+        </Container>
+            
+      <Container>
+        <Heading>MENU</Heading>
+      </Container>
     </>
   );
 }
-//
