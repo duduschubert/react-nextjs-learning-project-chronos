@@ -1,18 +1,24 @@
+import { Container } from './components/Container/index.tsx';
+import { Menu } from './components/Menu/Index.tsx'
+import { Logo } from './components/Logo/Index.tsx'
+import { CountDown } from './components/CountDown/Index.tsx';
+
 import './styles/theme.css';
 import './styles/global.css';
-
-import { Container } from './components/Container/index.tsx';
-import { Heading } from './components/Heading/Index.tsx';
 
 export function App() {
   return (
     <>
       <Container>
-        <Heading>LOGO</Heading>
+        <Logo />
         </Container>
             
       <Container>
-        <Heading>MENU</Heading>
+        <Menu />
+      </Container>
+
+      <Container>
+        <CountDown />
       </Container>
     </>
   );
