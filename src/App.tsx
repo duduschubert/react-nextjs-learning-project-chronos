@@ -6,15 +6,12 @@ import { Container } from './components/Container/index.tsx';
 import { CountDown } from './components/CountDown/Index.tsx';
 import { DefaultInput } from './components/DefaultInput/Index.tsx';
 import { DefaultButton } from './components/DefaultButton/Index.tsx';
-import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
-
+import { PlayCircleIcon } from 'lucide-react'; //StopCircleIcon
 
 import './styles/theme.css';
 import './styles/global.css';
 
 export function App() {
- 
-
   return (
     <>
       <Container>
@@ -49,7 +46,7 @@ export function App() {
 
           <div className='formRow'>
             <DefaultButton icon={<PlayCircleIcon />} color='green' />
-           {/* <DefaultButton icon={<StopCircleIcon />} color='red' />*/}
+            {/* <DefaultButton icon={<StopCircleIcon />} color='red' />*/}
           </div>
 
           <div>
