@@ -54,6 +54,3 @@ export function App() {
       {/*<Heading>Número: <span id='numero'> {numero}</span> <Heading/>
         <button onClick = {handleClick}> Aumenta </button> */}
       
-
-      alteração
-      
