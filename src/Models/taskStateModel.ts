@@ -1,9 +1,9 @@
-import type { TaskModel } from './taskModel';
+import type { TaskModel } from "./TaskModel";
 
 // Estado -> Componente -> Repassar para componentes filhos
 
-export type TaskStateMiodel = {
-  tasks: [TaskModel];
+export type TaskStateModel = {
+  tasks: TaskModel[];
   secondsRemaining: number;
   formattedSecondsRemaining: string;
   activeTask: TaskModel | null;

@@ -18,3 +18,35 @@ export type TaskStateMiodel = {
     longBreakTime: number; // MainForm
   };
 };
+
+
+
+import type { TaskStateModel } from './taskStateModel';
+
+export type TaskModel = {
+  id: string;
+  name: string;
+  duration: number;
+  startDate: number;
+  completeDate: number | null; // Quando o timer chegar ao final
+  interruptDate: number | null; // Quando a task for interrompida
+  type: keyof TaskStateModel['config'];
+};
+
+
+import type { TaskModel } from "./taskModel";
+
+// Estado -> Componente -> Repassar para componentes filhos
+
+export type TaskStateModel = {
+  tasks: [TaskModel];
+  secondsRemaining: number;
+  formattedSecondsRemaining: string;
+  activeTask: TaskModel | null;
+  currentCycle: number; // numero de 1 a 8 que contam os ciclos do Pomodoro
+  config: {
+    workTime: number;
+    shortBreakTime: number;
+    longBreakTime: number;
+  };
+};
